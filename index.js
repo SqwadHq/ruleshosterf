@@ -15,7 +15,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Optionally: explicitly handle "/" if you want to force index.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
+    res.sendFile(path.join(__dirname, 'public/index.en.html'));
+});
+
+app.get('/es', (_req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.es.html'));
 });
 
 console.log("App listening on port " + port);

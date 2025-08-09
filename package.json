@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Micro Service to convert csvs to ford acceptable files",
   "main": "index.js",
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
