@@ -15,6 +15,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Optionally: explicitly handle "/" if you want to force index.html
 app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+});
+
+app.get('/en', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.en.html'));
 });
 
