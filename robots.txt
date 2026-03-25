@@ -7,4 +7,4 @@ User-agent: Googlebot
 User-agent: AdsBot-Google
 Disallow: /
 
-Sitemap: https://.herokuapp.com/sitemap.xml
+Sitemap: https://fordtailgaterules.herokuapp.com/sitemap.xml
