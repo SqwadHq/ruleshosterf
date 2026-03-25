@@ -19,11 +19,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/en', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.en.html'));
+    res.sendFile(path.join(__dirname, 'public/en/index.html'));
 });
 
 app.get('/es', (_req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.es.html'));
+    res.sendFile(path.join(__dirname, 'public/es/index.html'));
 });
 
 console.log("App listening on port " + port);
