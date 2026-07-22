@@ -26,5 +26,10 @@ app.get('/es', (_req, res) => {
     res.sendFile(path.join(__dirname, 'public/es/index.html'));
 });
 
+// Catch-all: any path not matched above (or by a static file) serves the home page
+app.use((_req, res) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
+});
+
 console.log("App listening on port " + port);
 app.listen(port);
